@@ -1,0 +1,74 @@
+Nick Duncan
+
+2)---------------------------------------------------------------------
+HTTP/1.1 200 OK
+Server: Werkzeug/3.1.3 Python/3.13.1
+Date: Wed, 29 Jan 2025 18:28:34 GMT
+Content-Type: application/json
+Content-Length: 370
+Connection: close
+
+{
+  "tasks": [
+    {
+      "description": "Milk, Cheese, Pizza, Fruit, Tylenol",
+      "done": false,
+      "title": "Buy groceries",
+      "uri": "http://127.0.0.1:5000/todo/1"
+    },
+    {
+      "description": "Need to find a good Python tutorial on the web",
+      "done": false,
+      "title": "Learn Python",
+      "uri": "http://127.0.0.1:5000/todo/2"
+    }
+  ]
+}
+
+3)------------------------------------------------------------------------
+HTTP/1.1 201 CREATED
+Server: Werkzeug/3.1.3 Python/3.13.1
+Date: Thu, 30 Jan 2025 00:44:30 GMT
+Content-Type: application/json
+Content-Length: 143
+Connection: close
+
+{
+  "task": {
+    "description": "my description",
+    "done": false,
+    "title": "my title",
+    "uri": "http://127.0.0.1:5000/todo/3"
+  }
+}
+
+
+# Note: I couldn't figure out how to do this from terminal; quite odd
+4)------------------------------------------------------------------------
+HTTP/1.1 200 OK
+Server: Werkzeug/3.1.3 Python/3.13.1
+Date: Thu, 30 Jan 2025 01:01:35 GMT
+Content-Type: application/json
+Content-Length: 178
+Connection: close
+
+{
+  "task": {
+    "description": "Need to find a good Python tutorial on the web",
+    "done": true,
+    "title": "Learn Python",
+    "uri": "http://127.0.0.1:5000/todo/2"
+  }
+}
+
+5)-------------------------------------------------------------------------
+HTTP/1.1 200 OK
+Server: Werkzeug/3.1.3 Python/3.13.1
+Date: Thu, 30 Jan 2025 01:02:40 GMT
+Content-Type: application/json
+Content-Length: 21
+Connection: close
+
+{
+  "result": true
+}
